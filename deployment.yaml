@@ -1,0 +1,22 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: devops_exam
+  name: question6
+spec:
+  ports: ~
+  replicas: 3
+  selector:
+    matchLabels:
+      app: devops_exam
+  template:
+    metadata:
+      labels:
+        app: devops_exam
+    spec:
+      containers:
+        -
+          image: doc143/divyafinalexam:v1
+          name: n01514367
